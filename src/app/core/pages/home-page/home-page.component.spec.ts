@@ -1,16 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { HomePageComponent } from "./home-page.component";
+import { PostListComponent } from "src/app/posts/components/post-list/post-list.component";
+import { PostListItemComponent } from "src/app/posts/components/post-list-item/post-list-item.component";
+import { HttpClientTestingModule } from "@angular/common/http/testing";
 
-import { HomePageComponent } from './home-page.component';
-
-describe('HomePageComponent', () => {
+describe("HomePageComponent", () => {
   let component: HomePageComponent;
   let fixture: ComponentFixture<HomePageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomePageComponent ]
-    })
-    .compileComponents();
+      declarations: [
+        HomePageComponent,
+        PostListComponent,
+        PostListItemComponent
+      ],
+      imports: [HttpClientTestingModule]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +25,7 @@ describe('HomePageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
