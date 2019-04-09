@@ -58,6 +58,12 @@ __Facebook__
   ([31f02a6d](git@github.com:Jaason/test-facebook/commit/31f02a6dcb1dd6585764d9a1208ba26670bfc09c))
 
 
+## Chore
+
+- **changelog:** update changelog
+  ([b5da97e7](git@github.com:Jaason/test-facebook/commit/b5da97e743887c5d03aa0f11b8fe3b31f2dabfc6))
+
+
 
 ---
 <sub><sup>*Generated with [git-changelog](https://github.com/rafinskipg/git-changelog). If you have any problems or suggestions, create an issue.* :) **Thanks** </sub></sup>
