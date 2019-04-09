@@ -3,6 +3,11 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
+
+  let fixture = null;
+  let component = null;
+  let $component = null;
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
@@ -12,24 +17,26 @@ describe('AppComponent', () => {
         AppComponent
       ],
     }).compileComponents();
+
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.debugElement.componentInstance;
+    $component = fixture.debugElement.nativeElement;
   }));
 
+  afterEach(() => {
+    $component.remove();
+  });
+
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeTruthy();
   });
 
   it(`should have as title 'test-angular-facebook'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('test-angular-facebook');
+    expect(component.title).toEqual('test-angular-facebook');
   });
 
   it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to test-angular-facebook!');
+    expect($component.querySelector('h1').textContent).toContain('Welcome to test-angular-facebook!');
   });
 });
