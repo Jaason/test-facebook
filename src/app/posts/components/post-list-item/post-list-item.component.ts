@@ -1,19 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
+import { Post } from "../../interfaces/post.interface";
 
 @Component({
-  selector: 'app-post-list-item',
-  templateUrl: './post-list-item.component.html',
-  styleUrls: ['./post-list-item.component.scss']
+  selector: "app-post-list-item",
+  templateUrl: "./post-list-item.component.html",
+  styleUrls: ["./post-list-item.component.scss"]
 })
 export class PostListItemComponent implements OnInit {
+  @Input() post: Post = null;
 
-  post = {
-    time: new Date()
-  };
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  getAuthorLink() {
+    return `/users/${this.post.author.id}`;
   }
 
+  getPostLink() {
+    return `/users/${this.post.id}`;
+  }
 }

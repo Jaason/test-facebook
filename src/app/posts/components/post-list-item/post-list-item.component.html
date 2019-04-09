@@ -1,18 +1,17 @@
 <div class="card">
   <div class="card-header">
-    {{ post.time | date: "fullDate" }}
+    <h5>
+      <a [href]="getAuthorLink()">
+        {{ post.author.name }}
+      </a>
+    </h5>
+    <a [href]="getPostLink()">{{ post.created_time | date: "fullDate" }}</a>
   </div>
-  <img
-    class="card-img-top"
-    src="https://picsum.photos/300/150"
-    alt="Card image cap"
-  />
+  <img class="card-img-top" [src]="post.images[0]" alt="Card image cap" />
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      {{ post.body }}
     </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
