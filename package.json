@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "test-angular-facebook",
+  "name": "test-facebook",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,8 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "changelog": "git-changelog",
-    "predeploy": "ng build --base-href=/test-angular-facebook/",
-    "deploy": "gh-pages -d dist/test-angular-facebook/"
+    "predeploy": "ng build --base-href=/test-facebook/",
+    "deploy": "gh-pages -d dist/test-facebook/"
   },
   "husky": {
     "hooks": {
