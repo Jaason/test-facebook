@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  postsUrl: '/test-facebook/assets/posts.json'
 };
