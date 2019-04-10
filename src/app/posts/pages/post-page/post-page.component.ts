@@ -26,7 +26,7 @@ export class PostPageComponent implements OnInit {
     this.postsService.getPostById(postId)
     .subscribe({
       next: (response) => {
-        console.log(response)
+        // console.log(response)
       },
       error: (err) => {
         console.log(err);

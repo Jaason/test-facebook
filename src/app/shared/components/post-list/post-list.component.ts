@@ -23,7 +23,7 @@ export class PostListComponent implements OnInit {
   private setupPosts() {
     this.postsService.getPosts().subscribe({
       next: response => {
-        console.log(response);
+        // console.log(response);
         this.posts = response.posts;
       },
       error: err => {
