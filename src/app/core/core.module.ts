@@ -20,7 +20,7 @@ registerLocaleData(localePl);
     BrowserModule,
     CoreRoutingModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [
     {

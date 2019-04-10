@@ -12,7 +12,11 @@ const routes: Routes = [
   {
     path: 'posts',
     loadChildren: '../posts/posts.module#PostsModule'
-  }
+  },
+  {
+    path: 'users',
+    loadChildren: '../users/users.module#UsersModule'
+  },
 ];
 
 @NgModule({
