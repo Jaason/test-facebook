@@ -31,8 +31,8 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have as title 'test-angular-facebook'`, () => {
-    expect(component.title).toEqual('test-angular-facebook');
+  it(`should have as title 'test-facebook'`, () => {
+    expect(component.title).toEqual('test-facebook');
   });
 
   it('should render title in a h1 tag', () => {
