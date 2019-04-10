@@ -1,10 +1,10 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
-import { HomePageComponent } from "./home-page.component";
-import { PostListComponent } from "src/app/posts/components/post-list/post-list.component";
-import { PostListItemComponent } from "src/app/posts/components/post-list-item/post-list-item.component";
-import { HttpClientTestingModule } from "@angular/common/http/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HomePageComponent } from './home-page.component';
+import { PostListComponent } from 'src/app/shared/components/post-list/post-list.component';
+import { PostListItemComponent } from 'src/app/shared/components/post-list-item/post-list-item.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-describe("HomePageComponent", () => {
+describe('HomePageComponent', () => {
   let component: HomePageComponent;
   let fixture: ComponentFixture<HomePageComponent>;
 
@@ -25,7 +25,7 @@ describe("HomePageComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
