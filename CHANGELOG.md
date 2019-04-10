@@ -1,3 +1,16 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/Jaason/test-facebook/compare/v1.0.2...v2.0.0) (2019-04-10)
+
+
+### Features
+
+* **cache:** create http cache interceptors ([507777d](https://github.com/Jaason/test-facebook/commit/507777d))
+* **core:** sign up and sign in ([22adceb](https://github.com/Jaason/test-facebook/commit/22adceb))
+* **posts:** add shared module ([6136a07](https://github.com/Jaason/test-facebook/commit/6136a07))
+* **users:** display user page ([ec57a12](https://github.com/Jaason/test-facebook/commit/ec57a12))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/Jaason/test-facebook/compare/v1.0.1...v1.0.2) (2019-04-10)
 
